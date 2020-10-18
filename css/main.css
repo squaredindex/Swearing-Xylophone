@@ -3,22 +3,19 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
-html,
-body {
-    height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 main {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
 .xylo {
-    box-sizing: border-box;
     display: flex;
     border: 10px solid #fff;
     background: #fff;
@@ -33,10 +30,17 @@ main {
     flex: 1 0 auto;
     -ms-touch-action: manipulation;
     touch-action: manipulation;
+    transition: transform 50ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(0.99);
 }
 
 .btn:active {
     opacity: 0.8;
+    transform: scale(0.98);
 }
 
 .light-blue {
