@@ -1,0 +1,68 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #333;
+  margin: 0;
+  padding: 0;
+  /* Remove blue touch highlight on mobile devices */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.xylo {
+  display: flex;
+  border: 10px solid white;
+  background: white;
+  width: 480px;
+  height: 480px;
+}
+
+@media (max-width: 480px) {
+  .xylo {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.xylo button {
+  border: 0;
+  cursor: pointer;
+  flex: 1 0 auto;
+  /* make the click feel snappier */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+button:hover,
+button:active {
+  opacity: 0.8;
+}
+
+/* Background Colours */
+.cyan {
+  background: #00ccff;
+}
+
+.yellow {
+  background: #ffff00;
+}
+
+.green {
+  background: #00ff00;
+}
+
+.pink {
+  background: #fa0096;
+}
+
+.blue {
+  background: #0f4295;
+}
