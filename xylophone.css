@@ -46,6 +46,7 @@ button:hover,
 button:active {
   filter: contrast(0.8);
   transform: scale(0.99);
+  box-shadow: inset 0 0.5rem 1rem hsla(0, 0%, 0%, 0.4);
 }
 
 /* Background Colours */
