@@ -50,22 +50,22 @@ button:active {
 }
 
 /* Background Colours */
-.cyan {
-  background: #00ccff;
+.key-1 {
+  background: #ffa600;
 }
 
-.yellow {
-  background: #ffff00;
+.key-2 {
+  background: #ff654c;
 }
 
-.green {
-  background: #00ff00;
+.key-3 {
+  background: #e13a7d;
 }
 
-.pink {
-  background: #fa0096;
+.key-4 {
+  background: #943d9a;
 }
 
-.blue {
+.key-5 {
   background: #0f4295;
 }
